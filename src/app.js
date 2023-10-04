@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector("#my-domain").innerHTML = generateDomainName();
+  document.querySelector.innerHTML = generateDomainName();
 };
 
 let generateDomainName = () => {
@@ -20,10 +20,10 @@ let generateDomainName = () => {
   let nounIndex = Math.floor(Math.random() * noun.length);
   let domainIndex = Math.floor(Math.random() * domain.length);
 
-  return (
+  console.log(
     pronoun[pronounIndex] +
-    adj[adjIndex] +
-    noun[nounIndex] +
-    domain[domainIndex]
+      adj[adjIndex] +
+      noun[nounIndex] +
+      domain[domainIndex]
   );
 };
